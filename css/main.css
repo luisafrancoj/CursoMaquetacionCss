@@ -1,25 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
-</style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
 
-body{
-  margin:0;
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
   padding: 0;
-  position: fixed;
-  top: 0;
-  bottom:0;
-  left:0;
-  right: 0;
 }
 
-/*html{
-  font-size:62.5%
-}*/
+.home-body{
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+}
 
 a{
   text-decoration: none;
   display: inline;
   color:black;
-
 }
 
 header{
@@ -145,3 +143,53 @@ nav .profile-link a{
   font-size: 20px;
   border: 1px solid white;
 }
+
+.blogs-main{
+  display: grid;
+}
+
+.blogs-news-container{
+  background-color: #e6e9ed;
+  padding:0px 50px 40px;
+}
+
+.blogs-main-new{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+
+.blogs-news-img-container{
+  grid-column: 1;
+}
+
+.blogs-news-img-container img{
+  width:85% ;
+}
+
+.blogs-news-info-container{
+  grid-column: 2;
+}
+
+.blogs-news-info-container p{
+  margin-bottom:35px;
+}
+
+.blogs-post-container{
+  padding: 0 50px 40px;
+}
+
+.blogs-post-container h3{
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom:20px;
+  text-align:center;
+}
+
+.blogs-button{
+  border: 1px solid #47cfac;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+
+
+
